@@ -1,0 +1,27 @@
+# ================================
+#   HorseRace - Configuration
+# ================================
+
+# Rayon de détection des checkpoints (en blocs)
+checkpoint-radius: 5
+
+# Activer les messages de debug
+debug: false
+
+# Intervalle de mise à jour du scoreboard (en ticks, 20 ticks = 1 seconde)
+scoreboard-update-interval: 10
+
+# Messages personnalisables
+messages:
+  prefix: "&6[&eHorseRace&6] &r"
+  race-started: "&aLa course a démarré ! Bonne chance !"
+  race-stopped: "&cLa course a été arrêtée."
+  checkpoint-reached: "&aCheckpoint &e%checkpoint% &aatteint !"
+  finish-reached: "&6&lARRIVÉE ! &eVous terminez %position% en &b%time% &esecondes !"
+  teleported-back: "&eVous avez été téléporté au checkpoint &6%checkpoint%&e."
+  no-race: "&cAucune course en cours."
+  already-finished: "&cVous avez déjà terminé la course."
+  not-on-horse: "&cVous devez être sur un cheval pour participer."
+  checkpoint-set: "&aCheckpoint &e%checkpoint% &adéfini à &7%x%, %y%, %z%&a."
+  start-set: "&aDépart défini à &7%x%, %y%, %z%&a."
+  finish-set: "&aArrivée définie à &7%x%, %y%, %z%&a."

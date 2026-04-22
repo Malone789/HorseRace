@@ -1,0 +1,32 @@
+name: HorseRace
+version: 1.0.0
+main: fr.horserace.HorseRacePlugin
+api-version: "1.21"
+description: Plugin de course à cheval avec checkpoints et classement
+author: HorseRace
+
+commands:
+  checkpoint:
+    description: Téléporte le joueur au checkpoint précédent
+    usage: /checkpoint
+    aliases: [cp]
+  setcheckpoint:
+    description: Définit un checkpoint
+    usage: /setcheckpoint <numéro|debut|fin> <x> <y> <z>
+    permission: horserace.admin
+  startrace:
+    description: Démarre la course
+    usage: /startrace
+    permission: horserace.admin
+  stoprace:
+    description: Arrête la course
+    usage: /stoprace
+    permission: horserace.admin
+
+permissions:
+  horserace.admin:
+    description: Accès aux commandes d'administration
+    default: op
+  horserace.play:
+    description: Participer à la course
+    default: true
